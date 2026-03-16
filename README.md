@@ -10,6 +10,7 @@ Running code to clean will create a cleaned folder (with only 2025 data) and a r
 Getting full data goes from get_full_data.py -> raw data -> running all timed data scripts -> timed data -> running all cleaned scripts -> cleaned data.
 - Kalshi is formatted: series -> events -> markets where each market is what people trade. 
 
+```text
 project-root/
 │
 src/
@@ -46,4 +47,4 @@ src/
         ├── time_historical_data.py # used to create .json above
         ├── time_series_data.py # used to create .json above
         └── checkpoint.json # used to keep track of markets in case api crashes
-
+'''
