@@ -28,6 +28,7 @@ for market in markets:
             "title": market.get("title"),
             "rules_primary": market.get("rules_primary"),
             "volume_fp": market.get("volume_fp"),
+            "close_time": market.get("close_time")
         })
         
 print(f"Original markets: {original_count}")
