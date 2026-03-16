@@ -43,6 +43,8 @@ src/
     │   ├── category_volume.json # total volume of each category
     │   ├── markets_above_10k.json # markets above 10k total volume (mar12 - mar12)
     │   ├── cleaned_timed_markets.json # all markets between 12mar2024 - 12mar2025
+    │   ├── politics_elections_markets.csv # only "politics" and "elections" markets
+    │   ├── keep_categories.py # creating .csv above
     │   ├── cleaned_timed_markets.py # creating .json above
     │   └── markets_10k.py # creating .json above
     │
@@ -51,5 +53,5 @@ src/
         ├── daily_cumulative_volume.py # to get aggregate_daily_volume.csv
         ├── eight_twenty_check.py # to get eighty_twenty_check.csv
         ├── chloropleht.py # to get chloropleth_data.csv
-        └── 
+        └── networks.py # to get politics_networks_edges.csv
 '''
