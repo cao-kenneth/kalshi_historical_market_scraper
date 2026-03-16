@@ -22,8 +22,14 @@ for market in markets:
     if volume == "0.00":
         removed_count += 1
     else:
-        cleaned_markets.append(market)
-
+        cleaned_markets.append({
+            "event_ticker": market.get("event_ticker"),
+            "ticker": market.get("ticker"),
+            "title": market.get("title"),
+            "rules_primary": market.get("rules_primary"),
+            "volume_fp": market.get("volume_fp"),
+        })
+        
 print(f"Original markets: {original_count}")
 print(f"Removed markets with volume_fp == 0.00: {removed_count}")
 print(f"Remaining markets: {len(cleaned_markets)}")
